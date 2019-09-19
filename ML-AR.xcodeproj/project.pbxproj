@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA1B0197233355710078FB9A /* HandGestureClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EA1B0196233355710078FB9A /* HandGestureClassifier.mlmodel */; };
 		EA4E6CE22332C0A9006C9F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6CE12332C0A9006C9F4E /* AppDelegate.swift */; };
 		EA4E6CE42332C0A9006C9F4E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6CE32332C0A9006C9F4E /* art.scnassets */; };
 		EA4E6CE62332C0A9006C9F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6CE52332C0A9006C9F4E /* ViewController.swift */; };
@@ -19,10 +18,10 @@
 		EA4E6D032332EBDA006C9F4E /* SCNNodes+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6D022332EBDA006C9F4E /* SCNNodes+Extension.swift */; };
 		EA4E6D0A2333186E006C9F4E /* ViewController+TapGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6D092333186E006C9F4E /* ViewController+TapGestures.swift */; };
 		EA4E6D0F233326B4006C9F4E /* UIDeviceOrientation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6D0E233326B4006C9F4E /* UIDeviceOrientation+Extensions.swift */; };
+		EAA318AD23335F10005DFA2C /* OpenCloseHandGestureClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EAA318AC23335F10005DFA2C /* OpenCloseHandGestureClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EA1B0196233355710078FB9A /* HandGestureClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandGestureClassifier.mlmodel; sourceTree = "<group>"; };
 		EA4E6CDE2332C0A9006C9F4E /* ML-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ML-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4E6CE12332C0A9006C9F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA4E6CE32332C0A9006C9F4E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		EA4E6D022332EBDA006C9F4E /* SCNNodes+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNodes+Extension.swift"; sourceTree = "<group>"; };
 		EA4E6D092333186E006C9F4E /* ViewController+TapGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TapGestures.swift"; sourceTree = "<group>"; };
 		EA4E6D0E233326B4006C9F4E /* UIDeviceOrientation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDeviceOrientation+Extensions.swift"; sourceTree = "<group>"; };
+		EAA318AC23335F10005DFA2C /* OpenCloseHandGestureClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = OpenCloseHandGestureClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 		EA4E6D042332F636006C9F4E /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
-				EA1B0196233355710078FB9A /* HandGestureClassifier.mlmodel */,
+				EAA318AC23335F10005DFA2C /* OpenCloseHandGestureClassifier.mlmodel */,
 			);
 			path = "ML Model";
 			sourceTree = "<group>";
@@ -214,8 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA4E6D0A2333186E006C9F4E /* ViewController+TapGestures.swift in Sources */,
+				EAA318AD23335F10005DFA2C /* OpenCloseHandGestureClassifier.mlmodel in Sources */,
 				EA4E6CF72332C785006C9F4E /* MainScene.swift in Sources */,
-				EA1B0197233355710078FB9A /* HandGestureClassifier.mlmodel in Sources */,
 				EA4E6D012332EA31006C9F4E /* SceneObject.swift in Sources */,
 				EA4E6D032332EBDA006C9F4E /* SCNNodes+Extension.swift in Sources */,
 				EA4E6D0F233326B4006C9F4E /* UIDeviceOrientation+Extensions.swift in Sources */,

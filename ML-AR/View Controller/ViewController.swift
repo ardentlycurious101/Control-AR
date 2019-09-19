@@ -18,7 +18,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     let mainScene = MainScene()
     
     // ML variables
-    let CoreMLModel = HandGestureClassifier().model
+    let CoreMLModel = OpenCloseHandGestureClassifier().model
     private let serialQueue = DispatchQueue(label: "com.elinaluaming.dispatchqueueml")
     var visionRequests = [VNRequest]()
     
@@ -52,7 +52,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         setUpCoreML()
                 
-        let timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.loopCoreMLUpdate), userInfo: nil, repeats: true)
+        let timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.loopCoreMLUpdate), userInfo: nil, repeats: true)
         
     }
     
@@ -98,26 +98,31 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             guard let result = request.results as? [VNClassificationObservation] else { fatalError("Model fail to process camera image.")
                 
             }
-        
-            print(result)
-        
-//           let classifications = result[0...2]
-//               .compactMap({ $0 as? VNClassificationObservation })
-//               .map({ "\($0.identifier) \(String(format:" : %.2f", $0.confidence))" })
-//               .joined(separator: "\n")
+                    
+            if let firstResultConfidence = result.first?.confidence, let firstResultIdentifier = result.first?.identifier {
+                
+                print("\(firstResultIdentifier) = \(firstResultConfidence)")
+                
+                DispatchQueue.main.async {
+                    
+                    if (firstResultConfidence > 0.9) {
+                        
+                        guard let childNode = self.sceneView.scene.rootNode.childNode(withName: "art.scnassets/toy_drummer.scn", recursively: true), let toyDrummer = childNode as? SceneObject else { return }
 
-//           print("Classifications: \(classifications)")
-//
-//           DispatchQueue.main.async {
-//               let topPrediction = classifications.components(separatedBy: "\n")[0]
-//               let topPredictionName = topPrediction.components(separatedBy: ":")[0].trimmingCharacters(in: .whitespaces)
-//               guard let topPredictionScore: Float = Float(topPrediction.components(separatedBy: ":")[1].trimmingCharacters(in: .whitespaces)) else { return }
-//
-//               if (topPredictionScore > 0.95) {
-//                   print("Top prediction: \(topPredictionName) - score: \(String(describing: topPredictionScore))")
-//
-//               }
-//           }
+                        if firstResultIdentifier == "Open Hand" {
+                            toyDrummer.animate()
+                        }
+                        
+                        if firstResultIdentifier == "Stop" {
+                            toyDrummer.stopAnimating()
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+            
        }
        
        request.imageCropAndScaleOption = VNImageCropAndScaleOption.centerCrop
@@ -147,5 +152,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             self.detectHandGesture()
         }
     }
+
 
 }
