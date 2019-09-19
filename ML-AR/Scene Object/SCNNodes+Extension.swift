@@ -19,7 +19,7 @@ extension SCNNode {
                 
             }
 
-            let objectScene = try SCNScene(url: sceneURL as URL, options: [SCNSceneSource.LoadingOption.animationImportPolicy: SCNSceneSource.AnimationImportPolicy.doNotPlay])
+            let objectScene = try SCNScene(url: sceneURL as URL, options: [SCNSceneSource.LoadingOption.animationImportPolicy: SCNSceneSource.AnimationImportPolicy.playRepeatedly])
             objectScene.rootNode.enumerateChildNodes { (node, _) in
                 nodesInFile.append(node)
             }

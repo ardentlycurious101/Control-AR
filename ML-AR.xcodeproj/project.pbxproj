@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA1B0197233355710078FB9A /* HandGestureClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EA1B0196233355710078FB9A /* HandGestureClassifier.mlmodel */; };
 		EA4E6CE22332C0A9006C9F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6CE12332C0A9006C9F4E /* AppDelegate.swift */; };
 		EA4E6CE42332C0A9006C9F4E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6CE32332C0A9006C9F4E /* art.scnassets */; };
 		EA4E6CE62332C0A9006C9F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6CE52332C0A9006C9F4E /* ViewController.swift */; };
@@ -14,14 +15,14 @@
 		EA4E6CEB2332C0AD006C9F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6CEA2332C0AD006C9F4E /* Assets.xcassets */; };
 		EA4E6CEE2332C0AD006C9F4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6CEC2332C0AD006C9F4E /* LaunchScreen.storyboard */; };
 		EA4E6CF72332C785006C9F4E /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6CF62332C785006C9F4E /* MainScene.swift */; };
-		EA4E6CFE2332E886006C9F4E /* ViewController+Tap Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6CFD2332E886006C9F4E /* ViewController+Tap Gesture.swift */; };
 		EA4E6D012332EA31006C9F4E /* SceneObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6D002332EA31006C9F4E /* SceneObject.swift */; };
 		EA4E6D032332EBDA006C9F4E /* SCNNodes+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6D022332EBDA006C9F4E /* SCNNodes+Extension.swift */; };
-		EA4E6D062332F65B006C9F4E /* MLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6D052332F65B006C9F4E /* MLModel.swift */; };
-		EA4E6D082332F685006C9F4E /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6D072332F685006C9F4E /* ImageClassifier.mlmodel */; };
+		EA4E6D0A2333186E006C9F4E /* ViewController+TapGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6D092333186E006C9F4E /* ViewController+TapGestures.swift */; };
+		EA4E6D0F233326B4006C9F4E /* UIDeviceOrientation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6D0E233326B4006C9F4E /* UIDeviceOrientation+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA1B0196233355710078FB9A /* HandGestureClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandGestureClassifier.mlmodel; sourceTree = "<group>"; };
 		EA4E6CDE2332C0A9006C9F4E /* ML-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ML-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4E6CE12332C0A9006C9F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA4E6CE32332C0A9006C9F4E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -31,11 +32,10 @@
 		EA4E6CED2332C0AD006C9F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA4E6CEF2332C0AD006C9F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA4E6CF62332C785006C9F4E /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
-		EA4E6CFD2332E886006C9F4E /* ViewController+Tap Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Tap Gesture.swift"; sourceTree = "<group>"; };
 		EA4E6D002332EA31006C9F4E /* SceneObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneObject.swift; sourceTree = "<group>"; };
 		EA4E6D022332EBDA006C9F4E /* SCNNodes+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNodes+Extension.swift"; sourceTree = "<group>"; };
-		EA4E6D052332F65B006C9F4E /* MLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModel.swift; sourceTree = "<group>"; };
-		EA4E6D072332F685006C9F4E /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		EA4E6D092333186E006C9F4E /* ViewController+TapGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TapGestures.swift"; sourceTree = "<group>"; };
+		EA4E6D0E233326B4006C9F4E /* UIDeviceOrientation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDeviceOrientation+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +68,7 @@
 		EA4E6CE02332C0A9006C9F4E /* ML-AR */ = {
 			isa = PBXGroup;
 			children = (
+				EA4E6D0D23332685006C9F4E /* Device Orientations */,
 				EA4E6D042332F636006C9F4E /* ML Model */,
 				EA4E6CFA2332E802006C9F4E /* ViewController+Extensions */,
 				EA4E6CFF2332E9EE006C9F4E /* Scene Object */,
@@ -90,7 +91,7 @@
 		EA4E6CFA2332E802006C9F4E /* ViewController+Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				EA4E6CFD2332E886006C9F4E /* ViewController+Tap Gesture.swift */,
+				EA4E6D092333186E006C9F4E /* ViewController+TapGestures.swift */,
 			);
 			path = "ViewController+Extensions";
 			sourceTree = "<group>";
@@ -127,10 +128,17 @@
 		EA4E6D042332F636006C9F4E /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
-				EA4E6D072332F685006C9F4E /* ImageClassifier.mlmodel */,
-				EA4E6D052332F65B006C9F4E /* MLModel.swift */,
+				EA1B0196233355710078FB9A /* HandGestureClassifier.mlmodel */,
 			);
 			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		EA4E6D0D23332685006C9F4E /* Device Orientations */ = {
+			isa = PBXGroup;
+			children = (
+				EA4E6D0E233326B4006C9F4E /* UIDeviceOrientation+Extensions.swift */,
+			);
+			path = "Device Orientations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,14 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4E6D0A2333186E006C9F4E /* ViewController+TapGestures.swift in Sources */,
 				EA4E6CF72332C785006C9F4E /* MainScene.swift in Sources */,
+				EA1B0197233355710078FB9A /* HandGestureClassifier.mlmodel in Sources */,
 				EA4E6D012332EA31006C9F4E /* SceneObject.swift in Sources */,
-				EA4E6CFE2332E886006C9F4E /* ViewController+Tap Gesture.swift in Sources */,
 				EA4E6D032332EBDA006C9F4E /* SCNNodes+Extension.swift in Sources */,
-				EA4E6D062332F65B006C9F4E /* MLModel.swift in Sources */,
+				EA4E6D0F233326B4006C9F4E /* UIDeviceOrientation+Extensions.swift in Sources */,
 				EA4E6CE62332C0A9006C9F4E /* ViewController.swift in Sources */,
 				EA4E6CE22332C0A9006C9F4E /* AppDelegate.swift in Sources */,
-				EA4E6D082332F685006C9F4E /* ImageClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2VNRS9R64U;
-				INFOPLIST_FILE = "ML-AR/Info.plist";
+				INFOPLIST_FILE = "ML-AR/Utilities/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2VNRS9R64U;
-				INFOPLIST_FILE = "ML-AR/Info.plist";
+				INFOPLIST_FILE = "ML-AR/Utilities/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

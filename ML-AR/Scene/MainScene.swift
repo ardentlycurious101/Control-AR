@@ -40,13 +40,13 @@ struct MainScene {
         let directionalLightNode = SCNNode()
         directionalLightNode.light = SCNLight()
         directionalLightNode.light?.type = .directional
-        directionalLightNode.eulerAngles = SCNVector3Make(GLKMathDegreesToRadians(-130), GLKMathDegreesToRadians(0), GLKMathDegreesToRadians(5))
+        directionalLightNode.eulerAngles = SCNVector3Make(GLKMathDegreesToRadians(-130), GLKMathDegreesToRadians(0), GLKMathDegreesToRadians(35))
         scene.rootNode.addChildNode(directionalLightNode)
         
     }
     
     func addSceneObject(at position: SCNVector3, with sceneAsset: String, to parentNode: SCNNode) {
-           
+                   
         guard let scene = self.scene else { return }
        
         let object = SceneObject(from: sceneAsset)
@@ -54,7 +54,8 @@ struct MainScene {
         object.name = sceneAsset
         object.scale = SCNVector3(0.01, 0.01, 0.01)
         object.position = scene.rootNode.convertPosition(position, to: parentNode)
-     
+        parentNode.addChildNode(object)
+    
     }
     
 }
