@@ -1,6 +1,6 @@
 <h1>Control AR</h1>
 <p>An iOS app that detects hand gestures using ML to control AR objects.</p>
-![github](https://user-images.githubusercontent.com/41212211/70397140-81c9ec80-19c4-11ea-89d8-3bbd998b8500.gif)
+![ML_AR](https://user-images.githubusercontent.com/41212211/70397140-81c9ec80-19c4-11ea-89d8-3bbd998b8500.gif)
 <ul>
 <li><code></code>Trained an image classification machine learning model using CreateML to detect hand gestures.</li>
 <li>
