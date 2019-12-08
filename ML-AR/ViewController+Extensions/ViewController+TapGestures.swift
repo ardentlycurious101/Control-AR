@@ -26,8 +26,8 @@ extension ViewController {
         if let camera = sceneView.session.currentFrame?.camera {
             
             var translation = matrix_identity_float4x4
-            translation.columns.3.z = -2.0
-            translation.columns.3.y = -1.0
+            translation.columns.3.z = -5.0
+//            translation.columns.3.y = -1.0
             let transform = translation * camera.transform
             let position = SCNVector3Make(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
             

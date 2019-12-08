@@ -52,7 +52,7 @@ struct MainScene {
         let object = SceneObject(from: sceneAsset)
        
         object.name = sceneAsset
-        object.scale = SCNVector3(0.05, 0.05, 0.05)
+        object.scale = SCNVector3(0.1, 0.1, 0.1)
         object.position = scene.rootNode.convertPosition(position, to: parentNode)
         parentNode.addChildNode(object)
     

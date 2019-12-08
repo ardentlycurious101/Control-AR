@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA171E8D239CFF4C009A60E4 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = EA171E8C239CFF4C009A60E4 /* Readme.md */; };
 		EA4E6CE22332C0A9006C9F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6CE12332C0A9006C9F4E /* AppDelegate.swift */; };
 		EA4E6CE42332C0A9006C9F4E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6CE32332C0A9006C9F4E /* art.scnassets */; };
 		EA4E6CE62332C0A9006C9F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4E6CE52332C0A9006C9F4E /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA171E8C239CFF4C009A60E4 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		EA4E6CDE2332C0A9006C9F4E /* ML-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ML-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4E6CE12332C0A9006C9F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA4E6CE32332C0A9006C9F4E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		EA4E6CD52332C0A9006C9F4E = {
 			isa = PBXGroup;
 			children = (
+				EA171E8C239CFF4C009A60E4 /* Readme.md */,
 				EA4E6CE02332C0A9006C9F4E /* ML-AR */,
 				EA4E6CDF2332C0A9006C9F4E /* Products */,
 			);
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA171E8D239CFF4C009A60E4 /* Readme.md in Resources */,
 				EA4E6CE42332C0A9006C9F4E /* art.scnassets in Resources */,
 				EA4E6CEE2332C0AD006C9F4E /* LaunchScreen.storyboard in Resources */,
 				EA4E6CEB2332C0AD006C9F4E /* Assets.xcassets in Resources */,
