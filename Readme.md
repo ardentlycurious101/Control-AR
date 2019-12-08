@@ -9,7 +9,7 @@ An iOS app that detects hand gestures using ML to control AR objects.
 * Performed multithreading using GCD dispatch queues to asynchronously run Vision requests.</div>
 * Set up a repeating loop for CoreML to obtain images from the camera to process through Vision, to enable continuous control of virtual content animation.
 
-###Technologies Used
+### Technologies Used
 * ARKit
 * SceneKit
 * CreateML
