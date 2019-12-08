@@ -1,9 +1,9 @@
 <h1>Control AR</h1>
 <p>An iOS app that detects hand gestures using ML to control AR objects.</p>
-<p><img src="&lt;img src=&quot;https://imgur.com/Q9fVrzR&quot; alt=&quot;&quot; /&gt;" alt="Preview" /></p>
-<pre><code></code>Trained an image classification machine learning model using CreateML to detect hand gestures.</pre>
+<blockquote class="imgur-embed-pub" lang="en" data-id="Q9fVrzR"><a href="//imgur.com/Q9fVrzR"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<p>&nbsp;</p>
 <ul>
-<li></li>
+<li><code></code>Trained an image classification machine learning model using CreateML to detect hand gestures.</li>
 <li>
 <div>Configured an augmented reality session using ARKit to incorporate virtual contents using SceneKit into the AR scene.&nbsp;</div>
 </li>
